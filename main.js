@@ -1,8 +1,7 @@
+const answerText = document.querySelector("#answer");
+const questionInput = document.querySelector("#question").value;
+
 function myFunction() {
-  const questionInput = document.querySelector("#question").value;
-
-  const answerText = document.querySelector("#answer");
-
   let text = "";
   let number = Math.floor(Math.random() * 10);
 
@@ -48,6 +47,7 @@ function myFunction() {
         "Summon a council of rubber ducks for a quacking good decision-making session!";
       break;
   }
+  console.log(text);
+  answerText.textContent = text;
   console.log(answerText);
-  answerText.textContent += " " + text;
 }

@@ -14,12 +14,14 @@ body {
 }
 
 h1 {
+    position: fixed;
     color: gold;
-    margin: 1rem;
-    font-size: 24px;
+    margin: 10px;
+    font-size: 20px;
 }
 
 label {
+    line-height: 300px;
     text-align: center; 
     font-family: 'Mountains of Christmas', Roboto;
     font-weight: bold;
@@ -46,10 +48,8 @@ label {
   }
 
 input {
-    margin: 5rem;
     width: 40%;
     height: 50px;
-    padding: 10px;
     font-size: 15px;
     border: goldenrod solid 3px;
     background: #f1f1f1;
@@ -58,14 +58,22 @@ input {
 button {
     padding: 10px;
     font-size: larger;
-    border: solid black 1px;
+    border: solid goldenrod 3px;
+    color: goldenrod;
+}
+
+p {
+    margin: 10rem;
+    font-size: 20px;
+    color: beige;
+    font-weight: bold;
 }
 
 #answer {
     font-size: 20px;
     color: beige;
     font-weight: bold;
-    top: 70%;
+    width: 100%;
 }
 
 footer {
