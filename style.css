@@ -1,25 +1,58 @@
 * {
-    margin: 20px;
-    padding: 20px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     text-align: center;
 }
 
 body {
+    background-image: url(./—Pngtree—enchanted\ forest\ at\ night\ square_10676303.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
     font-family: 'Courier New', Courier, monospace;
-    background-color: rgb(120, 23, 120);
+}
+
+h1 {
+    color: gold;
+    margin: 1rem;
+    font-size: 24px;
 }
 
 label {
+    text-align: center; 
+    font-family: 'Mountains of Christmas', Roboto;
     font-weight: bold;
-    font-size: larger;
-    color: beige;
+    font-size: 3rem;
+    color: #fff;
+    animation: zoomup 3s ease infinite;
+    animation-delay: calc(100ms * var(--i));
 }
 
+@keyframes zoomup {
+    0%,
+    100% {
+      color: #ffb703;
+      filter: blur(0.5px);
+      text-shadow: 0 0 10px #ffb703, 0 0 20px #ffb703, 0 0 30px #ffb703,
+        0 0 40px #ffb703, 0 0 50px #ffb703, 0 0 60px #ffb703;
+    }
+  
+    50% {
+      filter: blur(0);
+      color: #fff;
+      text-shadow: none;
+    }
+  }
+
 input {
-    width: 30%;
-    font-size: larger;
-    border: solid black 5px;
+    margin: 5rem;
+    width: 40%;
+    height: 50px;
+    padding: 10px;
+    font-size: 15px;
+    border: goldenrod solid 3px;
+    background: #f1f1f1;
 }
 
 button {
@@ -29,7 +62,16 @@ button {
 }
 
 #answer {
-    font-size: larger;
+    font-size: 20px;
     color: beige;
     font-weight: bold;
+    top: 70%;
+}
+
+footer {
+    position: absolute;
+    color: beige;
+    width: 100%;
+    bottom: 0;
+    height: 2rem;
 }

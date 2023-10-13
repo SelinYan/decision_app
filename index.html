@@ -5,22 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Desicion making app</title>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Lato:wght@300&family=Montserrat:ital,wght@1,300&family=Mountains+of+Christmas:wght@700&family=Roboto:wght@400;500&family=Tilt+Prism&display=swap"
+      rel="stylesheet" />
   </head>
 
   <body>
     <h1>Desicion making app</h1>
-    <p>Ask any question, get funniest answer!</p>
 
-    <div>
-      <label for="question">What's in your mind now?</label>
-      <input type="text" name="question" id="question" />
+    <label for="question">What's in your mind now?</label>
+
+    <form class="container1" action="action_page.php">
+      <input type="text" placeholder="type here" name="question" />
+      <button type="submit" onclick="myFunction()">Submit</button>
+    </form>
+
+    <div class="container2">
+      <div><p>The answer is:</p></div>
+      <div><p id="answer"></p></div>
     </div>
 
-    <div>
-      <button onclick="myFunction()">Submit</button>
-    </div>
-
-    <div><p id="answer">The answer is:</p></div>
+    <footer>Ask any question, get funniest answer!</footer>
 
     <script src="./main.js"></script>
   </body>
